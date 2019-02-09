@@ -1,0 +1,135 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7420561405748789086",
+      "lastPropertyId": "4:5184280209474855657",
+      "name": "AnotacaoDoDiario",
+      "properties": [
+        {
+          "id": "1:5894302742617375024",
+          "name": "id"
+        },
+        {
+          "id": "2:8875263281757084897",
+          "name": "texto"
+        },
+        {
+          "id": "3:204198846231547681",
+          "name": "hora"
+        },
+        {
+          "id": "4:5184280209474855657",
+          "indexId": "1:5461752804925600093",
+          "name": "dataId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:1723599126092379688",
+      "lastPropertyId": "3:9107705351507286936",
+      "name": "Data",
+      "properties": [
+        {
+          "id": "1:4854982983327530498",
+          "name": "id"
+        },
+        {
+          "id": "2:3790934197687691906",
+          "name": "data"
+        },
+        {
+          "id": "3:9107705351507286936",
+          "indexId": "2:4551678148982002984",
+          "name": "estudanteId"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:686804497067460823",
+          "name": "tarefas"
+        },
+        {
+          "id": "2:1201304393957627994",
+          "name": "anotacoesDoDiario"
+        }
+      ]
+    },
+    {
+      "id": "3:11560610005454425",
+      "lastPropertyId": "4:6762876807425158495",
+      "name": "Estudante",
+      "properties": [
+        {
+          "id": "1:7730681144671732261",
+          "name": "id"
+        },
+        {
+          "id": "2:8553967359877958606",
+          "name": "nomeDeUsuario"
+        },
+        {
+          "id": "3:5442847016116886047",
+          "name": "email"
+        },
+        {
+          "id": "4:6762876807425158495",
+          "name": "senha"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:5846134395042248215",
+          "name": "datas"
+        }
+      ]
+    },
+    {
+      "id": "4:8819313409125921794",
+      "lastPropertyId": "6:5424356986807440738",
+      "name": "Tarefa",
+      "properties": [
+        {
+          "id": "1:2146708291566420147",
+          "name": "id"
+        },
+        {
+          "id": "2:6198504910070835648",
+          "name": "titulo"
+        },
+        {
+          "id": "3:7031168109881581716",
+          "name": "descricao"
+        },
+        {
+          "id": "4:715616075125354942",
+          "name": "horaInicio"
+        },
+        {
+          "id": "5:1211101037386827237",
+          "name": "horaTermino"
+        },
+        {
+          "id": "6:5424356986807440738",
+          "indexId": "3:4606537153518677488",
+          "name": "dataId"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:8819313409125921794",
+  "lastIndexId": "3:4606537153518677488",
+  "lastRelationId": "3:5846134395042248215",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
