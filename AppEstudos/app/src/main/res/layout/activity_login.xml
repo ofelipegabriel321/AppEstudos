@@ -105,7 +105,7 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
             android:background="@color/colorAccent"
             android:gravity="center"
             android:text="@string/login"
-            app:layout_constraintBottom_toTopOf="@+id/idCadastroEmLogin"
+            app:layout_constraintBottom_toTopOf="@+id/idBtnCadastroEmLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idTextInputLayoutSenhaEmLogin" />
@@ -117,11 +117,11 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
             android:layout_marginStart="10dp"
             android:layout_marginBottom="6dp"
             android:text="@string/pergunta_para_cadastro"
-            app:layout_constraintBottom_toTopOf="@+id/idCadastroEmLogin"
+            app:layout_constraintBottom_toTopOf="@+id/idBtnCadastroEmLogin"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/idCadastroEmLogin"
+            android:id="@+id/idBtnCadastroEmLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
