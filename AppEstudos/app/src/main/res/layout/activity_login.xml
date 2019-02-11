@@ -9,9 +9,8 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:orientation="vertical"
     android:fillViewport="true"
-    tools:context=".ui.LoginActivity">
+    tools:context=".view.LoginActivity">
     <!--
     Definição do Constraint Layout
     -->
@@ -19,8 +18,7 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBackground"
-        android:orientation="vertical"
-        tools:context=".ui.LoginActivity">
+        tools:context=".view.LoginActivity">
 
         <!--
         Definição da imagem do Logo
@@ -49,7 +47,7 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
             android:id="@+id/idTextInputLayoutEmailEmLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idLogoEmLogin">
@@ -105,6 +103,7 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
             android:background="@color/colorAccent"
             android:gravity="center"
             android:text="@string/login"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/idBtnCadastroEmLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -129,6 +128,7 @@ Definição do Scroll View para que a tela de adapte ao modo Paisagem
             android:layout_marginBottom="20dp"
             android:background="@color/colorAccentDark"
             android:text="@string/cadastre_se"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
