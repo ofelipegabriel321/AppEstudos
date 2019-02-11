@@ -14,6 +14,8 @@ public class Data {
     private ToMany<Tarefa> tarefas;
     private ToMany<AnotacaoDoDiario> anotacoesDoDiario;
 
+    public Data(){}
+
     public Data(String data){
         this.data = data;
     }

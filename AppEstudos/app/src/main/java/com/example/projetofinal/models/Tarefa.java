@@ -14,6 +14,8 @@ public class Tarefa {
     private String horaTermino;
     private ToOne<Data> data;
 
+    public Tarefa(){}
+
     public Tarefa(String titulo, String descricao, String horaInicio, String horaTermino) {
         this.titulo = titulo;
         this.descricao = descricao;

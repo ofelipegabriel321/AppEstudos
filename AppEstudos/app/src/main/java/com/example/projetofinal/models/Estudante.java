@@ -16,6 +16,8 @@ public class Estudante {
     private String senha;
     private ToMany<Data> datas;
 
+    public Estudante(){}
+
     public Estudante(String nomeDeUsuario, String email, String senha){
         this.nomeDeUsuario = nomeDeUsuario;
         this.email = email;

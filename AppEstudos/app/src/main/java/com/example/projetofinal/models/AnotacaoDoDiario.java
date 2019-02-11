@@ -12,6 +12,8 @@ public class AnotacaoDoDiario {
     private String hora;
     private ToOne<Data> data;
 
+    public AnotacaoDoDiario(){}
+
     public AnotacaoDoDiario(String texto, String hora){
         this.texto = texto;
         this.hora = hora;
