@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
     public void logar(){
         if (verificarSePodeLogar()){
             Toast.makeText(getApplicationContext(), "Login feito com sucesso!", Toast.LENGTH_SHORT).show();
-            //irParaPainelDoEstudanteActivity();
+            irParaPainelDoEstudanteActivity();
         }
     }
 
@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void irParaPainelDoEstudanteActivity(){
-        // AGORA IR PRA A OUTRA ACTIVITY
+        startActivity(new Intent(this, PainelDoEstudanteActivity.class));
     }
 
     public void irParaCadastroActivity(){

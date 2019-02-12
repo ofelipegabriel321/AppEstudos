@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">ProjetoFinal</string>
     <string name="content_description_logo">Logo do Aplicativo</string>
+    <string name="title_home">Home</string>
+    <string name="title_feito">Feito</string>
+    <string name="title_fazendo">Fazendo</string>
+    <string name="title_a_fazer">A fazer</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="login">Login</string>
