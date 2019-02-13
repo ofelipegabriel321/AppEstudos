@@ -5,34 +5,41 @@ import io.objectbox.annotation.Id;
 import io.objectbox.relation.ToOne;
 
 @Entity
-public class AnotacaoDoDiario {
+public class AnotacaoDoDiario extends Agendamento {
     @Id
     public long id;
-    private String texto;
-    private String hora;
+    private String descricao;
+    private String horaInicializacao;
     private ToOne<Data> data;
 
     public AnotacaoDoDiario(){}
 
-    public AnotacaoDoDiario(String texto, String hora){
-        this.texto = texto;
-        this.hora = hora;
+    public AnotacaoDoDiario(String descricao, String horaInicializacao){
+        super(descricao, horaInicializacao);
     }
 
-    public String getTexto() {
-        return texto;
+    public long getId() {
+        return id;
     }
 
-    public void setTexto(String texto) {
-        this.texto = texto;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public String getHora() {
-        return hora;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setHora(String hora) {
-        this.hora = hora;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getHoraInicializacao() {
+        return horaInicializacao;
+    }
+
+    public void setHoraInicializacao(String horaInicializacao) {
+        this.horaInicializacao = horaInicializacao;
     }
 
     public ToOne<Data> getData() {

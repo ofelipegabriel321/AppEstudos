@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:7420561405748789086",
-      "lastPropertyId": "4:5184280209474855657",
+      "lastPropertyId": "6:3316427924879324455",
       "name": "AnotacaoDoDiario",
       "properties": [
         {
@@ -13,17 +13,17 @@
           "name": "id"
         },
         {
-          "id": "2:8875263281757084897",
-          "name": "texto"
-        },
-        {
-          "id": "3:204198846231547681",
-          "name": "hora"
-        },
-        {
           "id": "4:5184280209474855657",
           "indexId": "1:5461752804925600093",
           "name": "dataId"
+        },
+        {
+          "id": "5:3249887248708959100",
+          "name": "descricao"
+        },
+        {
+          "id": "6:3316427924879324455",
+          "name": "horaInicializacao"
         }
       ],
       "relations": []
@@ -89,7 +89,7 @@
     },
     {
       "id": "4:8819313409125921794",
-      "lastPropertyId": "6:5424356986807440738",
+      "lastPropertyId": "7:3441305845270703720",
       "name": "Tarefa",
       "properties": [
         {
@@ -105,10 +105,6 @@
           "name": "descricao"
         },
         {
-          "id": "4:715616075125354942",
-          "name": "horaInicio"
-        },
-        {
           "id": "5:1211101037386827237",
           "name": "horaTermino"
         },
@@ -116,6 +112,10 @@
           "id": "6:5424356986807440738",
           "indexId": "3:4606537153518677488",
           "name": "dataId"
+        },
+        {
+          "id": "7:3441305845270703720",
+          "name": "horaInicializacao"
         }
       ],
       "relations": []
@@ -129,7 +129,11 @@
   "modelVersionParserMinimum": 4,
   "retiredEntityUids": [],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    8875263281757084897,
+    204198846231547681,
+    715616075125354942
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

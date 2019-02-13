@@ -5,21 +5,21 @@ import io.objectbox.annotation.Id;
 import io.objectbox.relation.ToOne;
 
 @Entity
-public class Tarefa {
+public class Tarefa extends Agendamento {
     @Id
     public long id;
     private String titulo;
     private String descricao;
-    private String horaInicio;
+    private String horaInicializacao;
     private String horaTermino;
     private ToOne<Data> data;
 
-    public Tarefa(){}
+    public Tarefa() {
+    }
 
-    public Tarefa(String titulo, String descricao, String horaInicio, String horaTermino) {
+    public Tarefa(String descricao, String horaInicializacao, String titulo, String horaTermino) {
+        super(descricao, horaInicializacao);
         this.titulo = titulo;
-        this.descricao = descricao;
-        this.horaInicio = horaInicio;
         this.horaTermino = horaTermino;
     }
 
@@ -39,12 +39,12 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public String getHoraInicio() {
-        return horaInicio;
+    public String getHoraInicializacao() {
+        return horaInicializacao;
     }
 
-    public void setHoraInicio(String horaInicio) {
-        this.horaInicio = horaInicio;
+    public void setHoraInicializacao(String horaInicializacao) {
+        this.horaInicializacao = horaInicializacao;
     }
 
     public String getHoraTermino() {

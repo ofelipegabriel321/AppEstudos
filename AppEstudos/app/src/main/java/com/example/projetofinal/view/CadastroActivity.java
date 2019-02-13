@@ -48,13 +48,14 @@ public class CadastroActivity extends AppCompatActivity {
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (verificarSePodeCadastrar())
+                if (verificarSePodeCadastrar()) {
                     estudante = new Estudante(Objects.requireNonNull(txtNomeDeUsuario.getText()).toString(),
                             Objects.requireNonNull(txtEmail.getText()).toString(),
                             Objects.requireNonNull(txtSenha.getText()).toString());
                     estudanteController.salvarEstudante(estudante);
                     irParaLoginActivity();
                     finish();
+                }
             }
         });
     }
